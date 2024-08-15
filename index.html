@@ -3,16 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <title>Bootstrap start</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        @media (max-width: 568px) {
+    .banner {
+        height: 70vh; /* Adjust height for small screens */
+    }
+}
+
+/* For screens between 569px and 1200px */
+@media (min-width: 569px) and (max-width: 1200px) {
+    .banner {
+        height: 100vh; /* Adjust height for medium screens */
+    }
+    .banner-text h1 {
+        font-size: 50px !important;
+    }
+    .banner-text p {
+        font-size: 70px !important;
+    }
+}
+
+/* Optionally, you can add styles for screens larger than 1200px */
+@media (min-width: 1201px) {
+    .banner {
+        height: 100vh; /* Adjust height for large screens */
+    }
+   
+    .banner-text h1 {
+        font-size: 50px !important;
+    }
+    .banner-text p {
+        font-size: 70px !important;
+    }
+    
+}
+.list-grp{
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+    
+}
+    </style>
+   
 </head>
 <body>
-    <a class="btn btn-primary" href="#" role="button">Link</a>
-<button class="btn btn-primary" type="submit">Button</button>
-<input class="btn btn-primary" type="button" value="Input">
-<input class="btn btn-primary" type="submit" value="Submit">
-<input class="btn btn-primary" type="reset" value="Reset">
+   <!-- here is a navbar -->
+   <div class="banner" style="background-image: url(images/header-bg.jpg); background-position: center;  background-size: cover; background-color: rgb(13,18,36);">
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/navbar-logo.svg" alt="" class="h-50 w-50 img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-info  fs-5 text-uppercase" aria-current="page" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fs-5 text-uppercase" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fs-5 text-uppercase" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fs-5 text-uppercase" href="#">TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fs-5 text-uppercase" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- end -->
+     <!-- banner section -->
+     <div class="container mt-5">
+
+        <div class="text-center pt-5 ">
+            <div class="banner-text" style="margin-top: 120px;">
+                <h1 class="text-white fs-lg-2 fs-3  fw-semibold fw-light">
+                    Welcome To Our Studio!
+                </h1>
+                <p class="text-white fs-1 fw-bold">
+                    It's Nice To  <span class="text-info">Meet You</span>
+                </p>
+                <button type="button" class="btn btn-outline-warning fs-3 text-warning">TELL ME MORE</button>
+               
+            </div>
+           
+
+        </div>
+        
+    </div>
+    <!-- banner end -->
+
+</div>
+<!-- card section start -->
+<!-- bootstrap buttons start -->
+<div class="container mt-5 text-center" style="background-color: #FFFFFF;">
+  <h2>Bootstrap Buttons</h2>
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+    </div>
+    <div class="mt-3 col-md-12 col-sm-12">
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-link">Link</button>
+      <button type="button" class="btn btn-outline-primary">Outline Primary</button>
+    </div>
+  </div>
+ 
+  
+</div>
+<!-- bootstrap buttons end -->
+ <!-- card start -->
+  <div class="container">
+    <h2 class="text-center mt-3">Bootstrap Card</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 p-3  ">
+     <div class="col">
+       <div class="card">
+         <img src="images/2.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title fw-bold text-black fs-2">Finish</h5>
+           <p class="card-text fst-italic">Identity</p>
+         </div>
+       </div>
+     </div>
+     <div class="col">
+       <div class="card">
+         <img src="images/3.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title fw-bold text-black fs-2">Explore</h5>
+           <p class="card-text fst-italic">Graphic Design</p>
+         </div>
+       </div>
+     </div>
+     <div class="col">
+       <div class="card">
+         <img src="images/5.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title fw-bold text-black fs-2">Lines</h5>
+           <p class="card-text fst-italic">Branding</p>
+         </div>
+       </div>
+     </div>
+     <div class="col">
+       <div class="card">
+         <img src="images/6.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title fw-bold text-black fs-2">Southwest</h5>
+           <p class="card-text fst-italic">Website Design</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+  </div>
+ <!-- card end -->
+ <!-- List Items-->
+<div class="container list-grp p-5">
+    <div class="col-12 col-md-8 col-lg-6 ">
+      <h2 class="text-center">Bootstrap List Group with Hover Effect</h2>
+      <ul class="list-group pt-2">
+        <li class="list-group-item list-group-item-action">Item 1</li>
+        <li class="list-group-item list-group-item-action">Item 2</li>
+        <li class="list-group-item list-group-item-action">Item 3</li>
+        <li class="list-group-item list-group-item-action">Item 4</li>
+        <li class="list-group-item list-group-item-action">Item 5</li>
+        <li class="list-group-item list-group-item-action">Item 6</li>
+        <li class="list-group-item list-group-item-action">Item 7</li>
+        <li class="list-group-item list-group-item-action">Item 8</li>
+        <li class="list-group-item list-group-item-action">Item 9</li>
+        <li class="list-group-item list-group-item-action">Item 10</li>
+      </ul>
+    </div>
+  </div>
+ <!-- List Items-->
+ <!-- Progressbar start-->
+ <div class="container text-center mt-3 p-5">
+  <h2>Bootstrap Progress Bar</h2>
+  <div class="progress w-75">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+  </div>
+</div>
+ <!-- Progressbar end-->
+ <!-- Pagination Start-->
+
+ <div class="container list-grp mt-5">
+  <h2>Bootstrap Pagination</h2>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+ <!-- Progressbar end-->
+
+ <!-- Table Start-->
+ <div class="container text-center p-5">
+  <h2>Bootstrap Table</h2>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>John</td>
+        <td>Doe</td>
+        <td>@johndoe</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jane</td>
+        <td>Smith</td>
+        <td>@janesmith</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Mike</td>
+        <td>Jones</td>
+        <td>@mikejones</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ <!-- Table end-->
+ <!-- DropDown Start-->
+ <div class="dropdown container p-5">
+  <!-- Large button groups (default and split) -->
+
+<div class="btn-group">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+</div>
+ <!-- DropDown end-->
+ <!-- form start-->
+ <div class="container p-5">
+  <h2>Bootstrap Form</h2>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="exampleSelect1">Example select</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleTextarea">Example textarea</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+ <!-- form end-->
+ <!-- nav start-->
+
+ <footer class="footer bg-dark text-white">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-decoration-none">Features</a></li>
+          <li><a href="#" class="text-decoration-none">Pricing</a></li>
+          <li><a href="#" class="text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li>Email: info@example.com</li>
+          <li>Phone: +123 456 7890</li>
+          <li>Address: 123 Street Name, City, Country</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p class="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+ <!-- nav end-->
+
+  
+  
+
+  
+
+
+
+
+
+
+    
+  
     
 
 
@@ -21,7 +361,13 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>    
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>     -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
